@@ -1,4 +1,4 @@
-VM696_device
+vm696_device
 ============
 
 Optimus Elite device tree for Virgin Mobile

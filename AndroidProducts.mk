@@ -18,4 +18,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/VM696.mk
+    $(LOCAL_DIR)/vm696.mk

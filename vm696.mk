@@ -1,27 +1,27 @@
 $(call inherit-product, device/lge/m3s-common/m3s.mk)
 
 # Inherit non-open-source blobs.
-$(call inherit-product-if-exists, vendor/lge/VM696/VM696-vendor-blobs.mk)
+$(call inherit-product-if-exists, vendor/lge/vm696/vm696-vendor-blobs.mk)
 
 ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/lge/VM696/prebuilt/kernel
+LOCAL_KERNEL := device/lge/vm696/prebuilt/kernel
 else
 LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
 endif
 
-DEVICE_PACKAGE_OVERLAYS += device/lge/VM696/overlay
+DEVICE_PACKAGE_OVERLAYS += device/lge/vm696/overlay
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_KERNEL):kernel \
 
 
-PRODUCT_NAME			    := VM696
-PRODUCT_DEVICE			    := VM696
+PRODUCT_NAME			    := vm696
+PRODUCT_DEVICE			    := vm696
 PRODUCT_BRAND			    := lge
-PRODUCT_MODEL			    := LG-VM696
+PRODUCT_MODEL			    := lg-vm696
 
 PRODUCT_RELEASE_NAME		    := LG Optimus Elite
-PRODUCT_VERSION_DEVICE_SPECIFIC	    := VM696ZV5
+PRODUCT_VERSION_DEVICE_SPECIFIC	    := vm696ZV5
 -include vendor/cyanogen/products/common_versions.mk
 
 TARGET_OTA_ASSERT_DEVICE	    := m3s_virgin_us,m3s

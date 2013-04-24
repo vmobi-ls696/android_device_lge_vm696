@@ -15,7 +15,7 @@
 # limitations under the License.
 
 VENDOR=lge
-DEVICE=VM696
+DEVICE=vm696
 
 mkdir -p ../../../vendor/$VENDOR/$DEVICE/proprietary
 
