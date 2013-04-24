@@ -3,17 +3,7 @@ $(call inherit-product, device/lge/m3s-common/m3s.mk)
 # Inherit non-open-source blobs.
 $(call inherit-product-if-exists, vendor/lge/vm696/vm696-vendor-blobs.mk)
 
-ifeq ($(TARGET_PREBUILT_KERNEL),)
-LOCAL_KERNEL := device/lge/vm696/prebuilt/kernel
-else
-LOCAL_KERNEL := $(TARGET_PREBUILT_KERNEL)
-endif
-
 DEVICE_PACKAGE_OVERLAYS += device/lge/vm696/overlay
-
-PRODUCT_COPY_FILES += \
-    $(LOCAL_KERNEL):kernel \
-
 
 PRODUCT_NAME			    := vm696
 PRODUCT_DEVICE			    := vm696
